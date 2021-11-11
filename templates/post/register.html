@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/Logo (2).png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto';
+            font-size: 18px; }
+
+            html, body {
+            max-width: 100%;
+            overflow-x: hidden; }
+
+            h1 {
+            font-size: 36px; }
+
+            :root {
+            --color-Primary: #2991F1;
+            --color-border-bottom: #C1C1C1; }
+
+            a {
+            text-decoration: none; }
+
+            main {
+            width: 100%;
+            min-height: 100vh;
+            border-radius: 0px 32px 32px 0px; }
+            main .container {
+                display: flex; }
+                main .container .col-1 {
+                flex-basis: 60%;
+                background: #fff;
+                width: 100%;
+                border-radius: 20px 20px 20px 20px;
+                height: 100vh; }
+                main .container .col-1 .wrapper {
+                    width: 80%;
+                    margin: 10px auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 90px; }
+                    main .container .col-1 .wrapper h1 {
+                    font-weight: 700; }
+                    main .container .col-1 .wrapper form {
+                    width: 90%;
+                    margin: 10px auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10.2px; }
+                    main .container .col-1 .wrapper form input {
+                        width: 95%;
+                        margin: 0px auto;
+                        border: none;
+                        border-bottom: 1px solid #C1C1C1;
+                        font-family: 'Josefin Sans', sans-serif;
+                        padding-top: 35px;
+                        padding-bottom: 5px; }
+                        main .container .col-1 .wrapper form input:focus {
+                        outline: none;
+                        width: 100%;
+                        transition: width .2s;
+                        border-bottom: 2px solid var(--color-Primary); }
+                    main .container .col-1 .wrapper form i {
+                        transform: translate(1796%, -138%);
+                        text-align: right;
+                        color: gray;
+                        cursor: pointer;
+                        width: 5%; }
+                    main .container .col-1 .wrapper form .fa-eye-slash {
+                        display: none;
+                        transition: all .2s; }
+                    main .container .col-1 .wrapper form button {
+                        border: none;
+                        background: #2991F1;
+                        color: #fff;
+                        font-weight: bold;
+                        width: 95%;
+                        margin: 0px auto;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        margin-top: 14px;
+                        font-size: 18px;
+                        transition: width .2s; }
+                        main .container .col-1 .wrapper form button:hover {
+                        width: 100%; }
+                    main .container .col-1 .wrapper form .or-text {
+                        color: #C1C1C1;
+                        text-align: center;
+                        margin-top: 22px;
+                        margin-bottom: 20px;
+                        font-weight: bold;
+                        font-size: 15px;
+                        margin-bottom: 15px;
+                        margin-top: 22px; }
+                    main .container .col-1 .wrapper form .social-login {
+                        display: flex;
+                        flex-direction: row;
+                        width: 95%;
+                        margin: 9px auto; }
+                        main .container .col-1 .wrapper form .social-login .google {
+                        margin-right: 25px; }
+                        main .container .col-1 .wrapper form .social-login a {
+                        display: flex;
+                        flex-basis: 50%;
+                        text-decoration: none;
+                        color: #000;
+                        border: 2px solid var(--color-Primary);
+                        border-radius: 12px;
+                        align-items: center;
+                        padding: 1px 12px; }
+                        main .container .col-1 .wrapper form .social-login a img {
+                            padding-right: 13px;
+                            width: 18%; }
+                        main .container .col-1 .wrapper form .social-login a:hover {
+                            background: #2991f117;
+                            transition: all .1s; }
+                    main .container .col-1 .wrapper .sign-up-text {
+                    color: var(--color-border-bottom);
+                    text-align: left;
+                    padding-top: 25px;
+                    font-size: 15px;
+                    width: 95%;
+                    margin: 0 auto; }
+                    main .container .col-1 .wrapper .sign-up-text a {
+                        color: var(--color-Primary);
+                        padding-left: 8px;
+                        font-size: 15px; }
+                main .container .col-2 {
+                flex-basis: 40%;
+                border-radius: 0px 0px 0px 0px;
+                background: var(--color-Primary); }
+                main .container .col-2 .wrapper {
+                    width: 90%;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    color: #fff; }
+                    main .container .col-2 .wrapper .select {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-top: 17px; }
+                    main .container .col-2 .wrapper .select select {
+                        background: none;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer; }
+                    main .container .col-2 .wrapper .container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 69px;
+                    margin-top: 57px; }
+                    main .container .col-2 .wrapper .container h1 {
+                        text-align: center;
+                        margin-bottom: 100px; }
+                    main .container .col-2 .wrapper .container .image img {
+                        width: 100%; }
+
+            @media (max-width: 920px) {
+            main .container {
+                flex-direction: column; }
+            main .container .col-2 {
+                border-radius: 32px 32px 32px 32px;
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                margin-top: 42px; }
+            main .container .col-2 .wrapper .container {
+                margin-top: 45px; } }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="col-1">
+                <div class="wrapper">
+                    <h1>Create Account</h1>
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="text" Required name="first_name" placeholder="First Name">
+                        <input type="text" Required name="last_name" placeholder="Last Name">
+                        <input type="text" Required name="username" placeholder="Username">
+                        <input type="email" Required name="email" placeholder="Email">
+                        <input type="password" Required name="password1" placeholder="Password" class="pasword-input">
+                        <input type="password" Required name="password2" placeholder="Confirm Password" class="pasword-input">
+                            <!-- <span> -->
+                                <i class="far fa-eye"></i>  
+                                <i class="far fa-eye-slash"></i>
+                            <!-- </span> -->
+                        <button type="submit" class="login-button" style="margin-bottom: 10px;">Create Account</button>
+                        <center><a type="button" href="{% url 'posts' %}"> Go Home</a></center>
+                        
+                        <p class="sign-up-text">Already Have an Account?<a class="" href="#">Login</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="wrapper">
+                    <div class="container">
+                        <h1>Sign Up</h1>
+                        <div class="image">
+                            <!-- <img src="assets/PinClipart.com_social-media-clip-art_515433.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script> 
+        const eye1=document.querySelector('.fa-eye');
+        const eye2=document.querySelector('.fa-eye-slash');
+        const passwordInput=document.querySelector('.pasword-input'); 
+
+        console.log(eye1);
+        console.log(eye2);  
+
+        eye1.addEventListener('click',()=>{
+            eye1.style.display="none";   
+            eye2.style.display="inline-block";    
+            passwordInput.type="text" 
+        })
+
+        eye2.addEventListener('click',()=>{ 
+            eye2.style.display="none";     
+            eye1.style.display="inline-block";  
+            passwordInput.type="password"   
+        })
+    </script>
+</body>
+</html>
